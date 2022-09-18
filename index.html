@@ -108,10 +108,11 @@
       await liff.init({ liffId: "1657481544-naK4Nmv1" })
       document.getElementById("isLoggedIn").append(liff.isLoggedIn())
       if(liff.isLoggedIn()){
-        getEnvironment()
-        getUserProfile()
+        //getEnvironment()
+        //getUserProfile()
       }else{
         liff.login({redirectUri:"https://notify-bot.line.me/en/"})
+        window.location.reload()
       }      
       // getContext()
       // getFriendship()
